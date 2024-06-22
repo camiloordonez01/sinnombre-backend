@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "strict": true,
+        "preserveConstEnums": true,
+        //"noEmit": true,
+        "sourceMap": false,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "inlineSources": true,
+        "inlineSourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": "lib",
+        "paths": {
+            "@helpers/*": ["./helpers/*"],
+            "@shared/*": ["./shared/*"],
+            "@users/*": ["./modules/users/*"],
+            "@utils/*": ["./modules/utils/*"]
+        }
+    },
+    "include": ["**/*.ts", "*.ts"],
+    "exclude": ["node_modules"],
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+    }
+}
